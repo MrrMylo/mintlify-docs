@@ -1,0 +1,44 @@
+#search-bar-entry,
+#search-bar-entry-mobile {
+  display: none !important;
+}
+
+/* Hide sidebar on the Home page only */
+html[data-current-path="/"] #sidebar {
+  display: none !important;
+}
+
+html[data-current-path="/"] #content-area {
+  margin-left: 0 !important;
+}
+
+/* Show product name next to the logo in the top navbar */
+a:has(> img.nav-logo) {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.75rem;
+}
+
+a:has(> img.nav-logo)::after {
+  content: "San Andreas Department of Corrections";
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: currentColor;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  a:has(> img.nav-logo)::after {
+    display: none;
+  }
+}
+
+/* 10-codes table: vertical divider between the two Code/Meaning pairs */
+.ten-codes-table table th:nth-child(2),
+.ten-codes-table table td:nth-child(2) {
+  border-right-width: 1px !important;
+  border-right-style: solid !important;
+  border-right-color: var(--border, rgba(148, 163, 184, 0.2)) !important;
+}

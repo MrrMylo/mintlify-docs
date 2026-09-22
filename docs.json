@@ -1,0 +1,134 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "San Andreas Department of Corrections",
+  "colors": {
+    "primary": "#EA580C",
+    "light": "#FB923C",
+    "dark": "#C2410C"
+  },
+  "favicon": "/logo/DOC-512.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Document Hub",
+        "pages": [
+          "index"
+        ],
+        "icon": "browsers"
+      },
+      {
+        "tab": "Department of Corrections - Standard Operating Procedures",
+        "pages": [
+          "sops/overview",
+          {
+            "group": "Rules and Information",
+            "icon": "book",
+            "pages": [
+              "sops/1-1-rules-and-conduct",
+              "sops/chain-of-command",
+              "sops/divisions",
+              "sops/ten-codes",
+              "sops/equipment-and-vehicles",
+              "sops/certifications",
+              "sops/uniform-regulations"
+            ],
+            "expanded": true
+          },
+          {
+            "group": "Miscellaneous",
+            "icon": "folder",
+            "pages": [
+              "sops/2-1-commands",
+              "2-2-disciplinary-process",
+              "2-3-activity-promotions-and-demotions",
+              "2-4-prison-map",
+              "2-5-shared-storage"
+            ],
+            "expanded": true
+          },
+          {
+            "group": "Standard Operating Procedures",
+            "icon": "book-open",
+            "expanded": true,
+            "pages": [
+              "3-1-use-of-force-procedures",
+              "3-2-ask-tell-make",
+              "3-2-prison-risk-level-procedures",
+              "3-4-vehicle-procedures",
+              "3-5-transport-procedures",
+              "3-6-visitation-procedures",
+              "3-7-bailiff-procedures",
+              "3-8-community-service-procedures",
+              "3-8-riot-procedures",
+              "3-9-inmate-procedures",
+              "3-11-inmate-punishment-guidelines",
+              "3-10-held-until-trial-procedures",
+              "3-11-maximum-security-procedures",
+              "3-12-incident-reports",
+              "3-13-conduct-at-police-stations-and-city-hall"
+            ]
+          }
+        ],
+        "icon": "book"
+      },
+      {
+        "tab": "Uniform Regulations",
+        "icon": "clothes-hanger",
+        "href": "general-unif",
+        "pages": [
+          "general-unif",
+          {
+            "group": "Department Uniform",
+            "pages": [
+              "cadet-uniform",
+              "cadet-uniform-2",
+              "cadet-uniform-2-2",
+              "cadet-uniform-2-2-2",
+              "cadet-uniform-2-2-2-2",
+              "cadet-uniform-2-2-2-2-2",
+              "cadet-uniform-2-2-2-2-2-2",
+              "cadet-uniform-2-2-2-2-2-2-2",
+              "cadet-uniform-2-2-2-2-2-3",
+              "cadet-uniform-2-2-2-2-2-3-2",
+              "cadet-uniform-2-2-2-2-2-3-2-2",
+              "rank-is"
+            ]
+          },
+          {
+            "group": "Divisional Uniforms",
+            "pages": [
+              "field-training-division",
+              "emergency-response-team"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Change Log",
+        "icon": "clock-rotate-left",
+        "pages": [
+          "change-log"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/DOC-512.png",
+    "dark": "/logo/DOC-512.png"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+  }
+}
